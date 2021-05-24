@@ -1,0 +1,64 @@
+body{
+  background-color: #ebeef4;
+}
+#wrapper{width: 600px margin:auto}
+#left{
+  width: 30%;
+  float:left;
+  background-color: #d4f9f8;
+}
+#right{
+  width: 30% ;
+  float: right;
+  background-color: #d4f9d3;
+
+}
+#mid{
+  width: 40% ;
+  float: left;
+  background-color: #d4f9d3;
+
+}
+#boxTitle{
+  border: solid 1px black;
+  padding: 5px;
+  text-align: center;
+}
+#boxContent{
+  border: solid 1px black;
+  padding-top: none;
+  padding: 5px;
+  text-align: center;
+}
+#listMessage{
+  background-color: #fcead4;
+  height: 500px;
+  width: 250px;
+  margin-bottom: 20px;
+  overflow:auto;
+  top:0;
+
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
