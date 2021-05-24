@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo chat</title>
+    <style>
+    div.ex3 {
+      background-color: lightblue;
+      width: 600px;
+      height: 110px;
+      overflow: auto;
+    }
+</style>
+  </head>
+  <script src="jquery.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="xuly.js"></script>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <body>
+    <div id="wrapper">
+      <div id="loginform">
+        <h1 style="text-align:center"> TRẠM CẢNH BÁO THIÊN TAI SẠT LỞ ĐẤT</h1>
+        <h3>Tên của bạn ?</h3>
+        <input type="text" id="txtUsername" />
+        <input type="button" value="Register" id="btnRegister" />
+      </div>
+      <div id="chatform">
+        <h1 style="text-align:center"> TRẠM CẢNH BÁO THIÊN TAI SẠT LỞ ĐẤT</h1>
+        <div id="left">
+          <div id="boxTitle">User Online</div>
+          <div id="boxContent">
+          </div>
+        </div>
+        <div id="mid">
+          <div id="sayHi">
+            <h3>TRÌNH TRẠNG KHU VỰC</h3>
+          </div>
+          <div id="chuoiDat">
+            <h4>Trình trạng đất hiện tai:</h4>
+            <button type="button" id="btnChuoiDat" class="button button1">Button Text</button>
+          </div>
+          <div id="chuoiNhietDo">
+            <h4>Nhiệt độ hiện tại:</h4>
+            <button type="button" id="btnChuoiNhietDo" class="button button1">Button Text</button>
+          </div>
+          <div id="chuoiDoAmDat">
+            <h4>Độ ẩm đất hiện tai:</h4>
+            <button type="button" id="btnChuoiDoAmDat" class="button button1">Button Text</button>
+          </div>
+        </div>
+        <div id="right">
+          <div id="sayHi">
+            Hello <span id="currentUser"></span>
+            <input type="button" id="btnLogOut" value="LogOut" />
+            Dữ liệu thu thập đươc:
+          </div>
+          <div class="ex3" id="listMessage">
+          </div>
+          <div id="thongbaowritting"></div>
+          <input type="text" id="txtMessage" />
+          <input type="button" id="btnSendMessage" value="Send" />
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
